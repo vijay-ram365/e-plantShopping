@@ -9,7 +9,6 @@ const CartItem = ({ onContinueShopping }) => {
 
   const calculateTotalAmount = () => {
     return cart.reduce((total, item) => {
-      console.log(item.cost);
       const price =
         typeof item.cost === "string"
           ? parseFloat(item.cost.replace("$", ""))
